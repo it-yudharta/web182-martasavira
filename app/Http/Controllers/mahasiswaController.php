@@ -9,6 +9,6 @@ class mahasiswaController extends Controller
     public function index()
     {
         $data_mahasiswa = \App\mahasiswa::all();
-        return view ('mahasiswa.index',['data.mahasiswa' => $data_mahasiswa]); 
+        return view ('mahasiswa.index',['data_mahasiswa' => $data_mahasiswa]); 
     }
 }
